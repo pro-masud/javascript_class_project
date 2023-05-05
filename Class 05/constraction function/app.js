@@ -1,29 +1,29 @@
-// student information 
+// Constractor function createing here now
 
-        let name = prompt("Name");
-        let roll = prompt("Roll");
+function DevInfo(){
 
 
-        //Subject name 
-        let bangla = prompt("Bangla");
-        let eng = prompt("English");
-        let math = prompt("Math");
-        let science = prompt("Science");
-        let ss = prompt("social Science");
-        let rel = prompt("Relagaon");
+        this.DevName = "Masud Rana";
+        this.DevAge = 22; 
+        this.DevJob = "MERN Stack Developer";
 
-        console.log(`
-        
-                Student Name            : ${ name }
-                Roll                    : ${ roll }
+        this.DevInfoAll = function (){
 
-                Subject Name        Marks               GPA                         Greet Point
-                bangla              ${ bangla }          ${ gpa( bangla )}               ${ greet( bangla )}
-                English             ${ eng }             ${ gpa( eng )}                  ${ greet( eng )}
-                Math                ${ math }            ${ gpa( math )}                 ${ greet( math )}
-                Science             ${ science }         ${ gpa( science )}              ${ greet( science )}
-                SScience            ${ ss }              ${ gpa( ss )}                   ${ greet( ss )}
-                Relagon             ${ rel }             ${ gpa( rel )}                  ${ greet( rel )}
-                ----------------------------------------------------------------------------------------------
-                      Total CGPA ${ CGPA(gpa(bangla), gpa(eng), gpa(math), gpa(science), gpa(ss), gpa(rel))}
-        `);
+                return`my name is ${ this.DevName} and i'm ${ this.DevAge} Years Old. I'm ${ this.DevJob }`;
+        }
+}
+
+
+
+//  create a object here now
+
+  DevInfo = new DevInfo();
+
+  //   object porparti name here now
+  console.log(DevInfo.DevName);
+  //   object porparti name here now
+  console.log(DevInfo.DevAge);
+  //   object porparti name here now
+  console.log(DevInfo.DevJob);
+  //   object porparti name here now
+  console.log(DevInfo.DevInfoAll());
