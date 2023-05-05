@@ -1,8 +1,6 @@
 // Constractor function createing here now
 
 function DevInfo(){
-
-
         this.DevName = "Masud Rana";
         this.DevAge = 22; 
         this.DevJob = "MERN Stack Developer";
@@ -17,13 +15,18 @@ function DevInfo(){
 
 //  create a object here now
 
-  DevInfo = new DevInfo();
+  let DevInfoNew = new DevInfo();
 
   //   object porparti name here now
-  console.log(DevInfo.DevName);
+  console.log(DevInfoNew.DevName);
   //   object porparti name here now
-  console.log(DevInfo.DevAge);
+  console.log(DevInfoNew.DevAge);
   //   object porparti name here now
-  console.log(DevInfo.DevJob);
+  console.log(DevInfoNew.DevJob);
   //   object porparti name here now
-  console.log(DevInfo.DevInfoAll());
+  console.log(DevInfoNew.DevInfoAll());
+
+
+//   Array creation start Now
+
+        let Foods = ['alo','potol','law','amme','dab'];
